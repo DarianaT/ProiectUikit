@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rețete Delicioase</title>
+  <link href="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/uikit.css" />
+</head>
+<body>
+
+<header>
+  <nav class="uk-navbar-container" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 0">
+    <div class="uk-container">
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="index.html">
+          <span uk-icon="icon: cutlery" class="custom-logo-icon"></span>
+          <span class="logo-text">Rețete <span class="highlight">Delicioase</span></span>
+        </a>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-visible@m">
+          <li><a href="index.html">Acasă</a></li>
+          <li class="uk-active"><a href="retete.html">Rețete</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="uk-navbar-toggle uk-hidden@m" uk-toggle href="#offcanvas-nav">
+          <span uk-navbar-toggle-icon></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<aside id="offcanvas-nav" uk-offcanvas>
+  <div class="uk-offcanvas-bar">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <ul class="uk-nav uk-nav-default">
+      <li><a href="index.html">Acasă</a></li>
+      <li class="uk-active"><a href="retete.html">Rețete</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</aside>
+
+<main>
+  <section class="hero uk-section uk-section-primary uk-light uk-background-cover uk-flex uk-flex-middle">
+    <div class="uk-container uk-text-center">
+      <h1 class="uk-heading-medium" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">Toate Rețetele</h1>
+      <p class="uk-text-lead">Inspiră-te pentru mesele perfecte!</p>
+    </div>
+  </section>
+
+  <div class="uk-alert-primary uk-text-center uk-margin" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p><strong>Promoție:</strong> Salvează 3 rețete și primești o rețetă bonus!</p>
+  </div>
+
+  <section class="uk-section">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Rețete recomandate</span></h2>
+      <div class="uk-child-width-1-3@m uk-grid-match uk-grid-small" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 150">
+        <div>
+          <article class="uk-card uk-card-default uk-card-hover uk-card-body">
+            <img src="images/omleta.jpg" alt="Omletă" class="uk-border-rounded uk-margin-bottom">
+            <h3>Omletă cu legume</h3>
+            <p>Mic dejun rapid și hrănitor în 10 minute.</p>
+            <a class="uk-button uk-button-secondary" href="#">Vezi rețeta</a>
+          </article>
+        </div>
+        <div>
+          <article class="uk-card uk-card-default uk-card-hover uk-card-body">
+            <img src="images/supa.jpg" alt="Supă cremă" class="uk-border-rounded uk-margin-bottom">
+            <h3>Supă cremă de dovleac</h3>
+            <p>Consistență perfectă, aromă de toamnă.</p>
+            <a class="uk-button uk-button-secondary" href="#">Vezi rețeta</a>
+          </article>
+        </div>
+        <div>
+          <article class="uk-card uk-card-default uk-card-hover uk-card-body">
+            <img src="images/cheesecake.jpg" alt="Cheesecake" class="uk-border-rounded uk-margin-bottom">
+            <h3>Cheesecake cu fructe</h3>
+            <p>Desert fresh fără coacere, gata în 15 minute.</p>
+            <a class="uk-button uk-button-secondary" href="#">Vezi rețeta</a>
+          </article>
+        </div>
+        <div>
+          <article class="uk-card uk-card-default uk-card-hover uk-card-body">
+            <img src="images/paste.jpg" alt="Paste carbonara" class="uk-border-rounded uk-margin-bottom">
+            <h3>Paste carbonara</h3>
+            <p>Clasic italian, în varianta rapidă și cremoasă.</p>
+            <a class="uk-button uk-button-secondary" href="#">Vezi rețeta</a>
+          </article>
+        </div>
+        <div>
+          <article class="uk-card uk-card-default uk-card-hover uk-card-body">
+            <img src="images/salata.jpg" alt="Salată cu quinoa" class="uk-border-rounded uk-margin-bottom">
+            <h3>Salată cu quinoa</h3>
+            <p>Sănătate într-un bol colorat.</p>
+            <a class="uk-button uk-button-secondary" href="#">Vezi rețeta</a>
+          </article>
+        </div>
+        <div>
+          <article class="uk-card uk-card-default uk-card-hover uk-card-body">
+            <img src="images/burger.jpg" alt="Burger vegetal" class="uk-border-rounded uk-margin-bottom">
+            <h3>Burger vegetal</h3>
+            <p>Fără carne, dar cu gust intens.</p>
+            <a class="uk-button uk-button-secondary" href="#">Vezi rețeta</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <h2 class="uk-text-center">Galerie din bucătărie</h2>
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
+        <ul class="uk-slideshow-items">
+          <li>
+            <a href="images/kitchen1.jpg" data-caption="Preparare paste" uk-lightbox>
+              <img src="images/kitchen1.jpg" alt="" uk-cover>
+            </a>
+          </li>
+          <li>
+            <a href="images/kitchen2.jpg" data-caption="Desert în lucru" uk-lightbox>
+              <img src="images/kitchen2.jpg" alt="" uk-cover>
+            </a>
+          </li>
+          <li>
+            <a href="images/kitchen3.jpg" data-caption="Ingrediente proaspete" uk-lightbox>
+              <img src="images/kitchen3.jpg" alt="" uk-cover>
+            </a>
+          </li>
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="uk-section">
+    <div class="uk-container">
+      <h2 class="uk-heading-line"><span>Rețete populare</span></h2>
+      <table class="uk-table uk-table-divider uk-table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Rețetă</th>
+            <th>Tip</th>
+            <th>Timp (min)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Pizza Margherita</td>
+            <td>Prânz</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Tartă cu mere</td>
+            <td>Desert</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Iaurt cu granola</td>
+            <td>Mic Dejun</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<a href="#" class="uk-totop" uk-scroll uk-totop></a>
+
+<footer class="uk-section uk-section-secondary uk-text-center">
+  <div class="uk-container">
+    <p>© 2025 RețeteDelicioase. Toate drepturile rezervate.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

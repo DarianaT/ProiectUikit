@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Rețete Delicioase</title>
+
+  <!-- UIKit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/uikit.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky>
+    <div class="uk-container">
+      <div class="uk-navbar-left">
+        <a href="index.html" class="uk-navbar-item uk-logo custom-logo-link">
+          <span uk-icon="icon: cutlery" class="custom-logo-icon"></span>
+          <span class="logo-text">Rețete <span class="highlight">Delicioase</span></span>
+        </a>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-visible@m">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="retete.html">Rețete</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-nav" uk-toggle>
+          <span uk-navbar-toggle-icon></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Off-canvas -->
+  <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+      <ul class="uk-nav uk-nav-default">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="retete.html">Rețete</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Contactează-ne</span></h2>
+
+      <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+        <div>
+          <form class="uk-form-stacked" action="afisare.php" method="POST">
+            <div class="uk-margin">
+              <label class="uk-form-label" for="nume">Nume</label>
+              <div class="uk-form-controls">
+                <input class="uk-input" id="nume" name="nume" type="text" placeholder="Numele tău" required>
+              </div>
+            </div>
+
+            <div class="uk-margin">
+              <label class="uk-form-label" for="email">Email</label>
+              <div class="uk-form-controls">
+                <input class="uk-input" id="email" name="email" type="email" placeholder="exemplu@email.com" required>
+              </div>
+            </div>
+
+            <div class="uk-margin">
+              <label class="uk-form-label" for="mesaj">Mesaj</label>
+              <div class="uk-form-controls">
+                <textarea class="uk-textarea" id="mesaj" name="mesaj" rows="5" placeholder="Scrie-ne un mesaj..." required></textarea>
+              </div>
+            </div>
+
+            <div class="uk-margin">
+              <button class="uk-button uk-button-primary" type="submit">Trimite mesajul</button>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <div class="uk-card uk-card-default uk-card-body contact-info-card">
+            <h3 class="uk-card-title">Informații de Contact</h3>
+            <p><span uk-icon="icon: location"></span> Str. Bucătăriei, Nr. 5, București</p>
+            <p><span uk-icon="icon: mail"></span> contact@retetedelicioase.ro</p>
+            <p><span uk-icon="icon: receiver"></span> 0712 345 678</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container">
+      <p>© 2025 RețeteDelicioase. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <!-- UIKit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

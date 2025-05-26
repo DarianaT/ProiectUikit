@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tartă cu Fructe - Rețete Delicioase</title>
+  <link href="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/uikit.css" />
+  <link rel="stylesheet" href="css/style-tarta.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-container">
+    <div class="uk-navbar-left">
+      <a href="index.html" class="uk-navbar-item uk-logo">Rețete Delicioase</a>
+    </div>
+    <div class="uk-navbar-right">
+      <ul class="uk-navbar-nav uk-visible@m">
+        <li><a href="index.html">Acasă</a></li>
+        <li class="uk-active"><a href="retete.html">Rețete</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-nav" uk-toggle>
+        <span uk-navbar-toggle-icon></span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Off-canvas meniu mobil -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <ul class="uk-nav uk-nav-default">
+      <li><a href="index.html">Acasă</a></li>
+      <li class="uk-active"><a href="retete.html">Rețete</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero-section tarta">
+  <div class="uk-container uk-text-center uk-light uk-flex uk-flex-middle hero-overlay">
+    <h1>Tartă cu fructe</h1>
+       <p class="uk-text-lead">Desert simplu și delicios, plin de fructe proaspete.</p>
+  </div>
+</section>
+
+<!-- Content Section -->
+<section class="uk-section uk-section-small">
+  <div class="uk-container">
+    <div class="uk-grid-large" uk-grid>
+      <!-- Image + Card -->
+      <div class="uk-width-1-2@m">
+        <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-large">
+          <img src="images/reteta3.jpg" alt="Tartă cu Fructe" class="uk-border-rounded uk-margin-bottom" />
+          <h2>Ingrediente</h2>
+          <ul class="ingredient-list uk-list uk-list-disc uk-padding-remove-left">
+            <li>250g făină</li>
+            <li>125g unt rece, tăiat cuburi</li>
+            <li>80g zahăr pudră</li>
+            <li>1 ou</li>
+            <li>500g fructe proaspete (căpșuni, afine, zmeură, etc.)</li>
+            <li>2 linguri gem de caise (pentru glazură)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Preparation Steps -->
+      <div class="uk-width-1-2@m">
+        <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-large">
+          <h2>Mod de preparare</h2>
+          <ol class="uk-list uk-list-decimal">
+            <li class="preparation-step">Amestecă făina cu zahărul pudră.</li>
+            <li class="preparation-step">Adaugă untul și frământă până obții un aluat sfărâmicios.</li>
+            <li class="preparation-step">Incorporează oul și formează o bilă de aluat.</li>
+            <li class="preparation-step">Lasă aluatul la rece pentru 30 de minute.</li>
+            <li class="preparation-step">Întinde aluatul și așază-l într-o tavă pentru tartă.</li>
+            <li class="preparation-step">Coace aluatul în cuptorul preîncălzit la 180°C pentru 15-20 minute.</li>
+            <li class="preparation-step">Lasă să se răcească, apoi adaugă fructele proaspete.</li>
+            <li class="preparation-step">Încălzește gemul de caise și unge fructele pentru luciu.</li>
+            <li class="preparation-step">Servește tartă rece sau la temperatura camerei.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Back Button -->
+<section class="uk-section uk-text-center uk-padding-remove-top uk-padding-bottom">
+  <a href="index.html" class="uk-button uk-button-primary uk-button-large uk-border-rounded">Înapoi la Acasă</a>
+  <a href="retete.html" class="uk-button uk-button-default uk-button-large uk-border-rounded uk-margin-left">Vezi toate rețetele</a>
+</section>
+
+<!-- Footer -->
+<footer class="uk-section uk-section-secondary uk-text-center">
+  <div class="uk-container">
+    <p>© 2025 RețeteDelicioase. Toate drepturile rezervate.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

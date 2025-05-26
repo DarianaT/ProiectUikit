@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paste cu Pesto - Rețete Delicioase</title>
+  <link href="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/uikit.css" />
+  <link rel="stylesheet" href="css/style-paste.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-container">
+    <div class="uk-navbar-left">
+      <a href="index.html" class="uk-navbar-item uk-logo">Rețete Delicioase</a>
+    </div>
+    <div class="uk-navbar-right">
+      <ul class="uk-navbar-nav uk-visible@m">
+        <li><a href="index.html">Acasă</a></li>
+        <li class="uk-active"><a href="retete.html">Rețete</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-nav" uk-toggle>
+        <span uk-navbar-toggle-icon></span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Off-canvas meniu mobil -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <ul class="uk-nav uk-nav-default">
+      <li><a href="index.html">Acasă</a></li>
+      <li class="uk-active"><a href="retete.html">Rețete</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="uk-section hero-section uk-flex uk-flex-center uk-flex-middle">
+  <div class="uk-container hero-overlay uk-text-center">
+    <h1 class="uk-heading-large">Paste cu Pesto</h1>
+    <p class="uk-text-lead">Paste ușoare, aromate cu sos pesto de casă</p>
+  </div>
+</section>
+
+<!-- Content Section -->
+<section class="uk-section uk-section-small">
+  <div class="uk-container">
+    <div class="uk-grid-large" uk-grid>
+      <!-- Image + Card -->
+      <div class="uk-width-1-2@m">
+        <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-large">
+          <img src="images/reteta2.jpg" alt="Paste cu Pesto" class="uk-border-rounded uk-margin-bottom" />
+          <h2>Ingrediente</h2>
+          <ul class="ingredient-list uk-list uk-list-disc uk-padding-remove-left">
+            <li>250g paste (spaghetti sau penne)</li>
+            <li>50g frunze proaspete de busuioc</li>
+            <li>30g semințe de pin</li>
+            <li>2 căței de usturoi</li>
+            <li>60g parmezan ras</li>
+            <li>100ml ulei de măsline</li>
+            <li>Sare și piper după gust</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Preparation Steps -->
+      <div class="uk-width-1-2@m">
+        <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-large">
+          <h2>Mod de preparare</h2>
+          <ol class="uk-list uk-list-decimal">
+            <li class="preparation-step">Fierbe pastele conform instrucțiunilor de pe ambalaj, până devin al dente.</li>
+            <li class="preparation-step">Într-un blender, mixează busuiocul, semințele de pin, usturoiul și parmezanul.</li>
+            <li class="preparation-step">Adaugă uleiul de măsline treptat, mixând până obții o pastă cremoasă.</li>
+            <li class="preparation-step">Scurge pastele și amestecă-le cu sosul pesto.</li>
+            <li class="preparation-step">Potrivește de sare și piper după gust.</li>
+            <li class="preparation-step">Servește imediat, decorat cu frunze de busuioc și parmezan ras.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Back Button -->
+<section class="uk-section uk-text-center uk-padding-remove-top uk-padding-bottom">
+  <a href="index.html" class="uk-button uk-button-primary uk-button-large uk-border-rounded">Înapoi la Acasă</a>
+  <a href="retete.html" class="uk-button uk-button-default uk-button-large uk-border-rounded uk-margin-left">Vezi toate rețetele</a>
+</section>
+
+<!-- Footer -->
+<footer class="uk-section uk-section-secondary uk-text-center">
+  <div class="uk-container">
+    <p>© 2025 RețeteDelicioase. Toate drepturile rezervate.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
